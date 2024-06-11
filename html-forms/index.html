@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      fieldset {
+        border: 0 none;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="https://example.com/register" method="post">
+      <fieldset>
+        <h1>Coding Form!</h1>
+      </fieldset>
+
+      <fieldset>
+        <label for="email">Email</label><br />
+        <input type="email" id="email" name="email" required /><br />
+      </fieldset>
+
+      <fieldset>
+        <label for="why_coding_is_cool">Why is coding cool?</label><br />
+        <select id="why_coding_is_cool" name="why_coding_is_cool">
+          <option value="">Select an option</option>
+          <option value="Interesting">Because it's interesting</option>
+          <option value="Fun">Because it's fun</option>
+          <option value="Powerful">Because it's powerful</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <label for="language">Favorite Language (choose one)</label><br /><br />
+        <label><input type="radio" name="language" value="HTML" /> HTML </label>
+        <label><input type="radio" name="language" value="CSS" /> CSS </label>
+        <label
+          ><input type="radio" name="language" value="JavaScript" /> JavaScript
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <label for="more_info"
+          >Would you like to sign up for more information?</label
+        >
+        <br />
+        <label
+          ><input type="checkbox" name="more_info" value="sign_up" /> Sign me
+          Up!</label
+        ><br />
+      </fieldset>
+
+      <fieldset>
+        <label for="comments">Comments</label><br />
+        <textarea id="comments" name="comments" rows="10" cols="35"></textarea
+        ><br />
+      </fieldset>
+
+      <fieldset>
+        <button type="submit">Submit</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
