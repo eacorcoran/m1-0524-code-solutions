@@ -1,0 +1,21 @@
+button {
+  width: 200px;
+  height: 50px;
+  border-radius: 6px;
+  border: lightgrey;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+th {
+  color: white;
+  background-color: black;
+}
+
+tr:nth-child(even) {
+  background-color: lightgrey;
+}
