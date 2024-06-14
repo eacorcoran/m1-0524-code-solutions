@@ -22,6 +22,8 @@ label {
   justify-content: center;
   align-items: center;
   height: 100%;
+  width: 550px;
+  margin: auto;
 }
 
 input {
@@ -36,7 +38,7 @@ input {
 
 input::placeholder {
   color: rgb(146, 144, 144);
-  font-family: AtlasGrotesk, Arial, sans-serif;
+  font-family: AtlasGrotesk, sans-serif;
   font-size: 12px;
 }
 
@@ -52,15 +54,15 @@ input[type='submit'] {
   text-align: center;
   padding-top: 5px;
   padding-bottom: 5px;
-  position: fixed;
-  right: 475px;
   margin-top: 7px;
+  margin-right: 10px;
+  margin-left: auto;
 }
 
 select {
   display: block;
   color: black;
-  font-family: BrandonGrotesk, Arial, sans-serif;
+  font-family: BrandonGrotesk, sans-serif;
   border-radius: 6px;
   font-size: 11px;
   font-weight: 150;
