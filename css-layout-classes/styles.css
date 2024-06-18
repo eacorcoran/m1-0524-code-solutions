@@ -14,19 +14,19 @@ h1 {
   align-content: center;
 }
 
-.row > .column-full {
+.column-full {
   flex-basis: 100%;
 }
 
-.row > .column-one-third {
+.column-one-third {
   flex-basis: calc(100% / 3);
 }
 
-.row > .column-one-fourth {
+.column-one-fourth {
   flex-basis: calc(100% / 4);
 }
 
-.row > .column-two-third {
+.column-two-third {
   flex-basis: 2 * calc(100% / 3);
   padding: 5px;
   border-spacing: border-box;
