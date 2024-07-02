@@ -1,0 +1,32 @@
+.light-bulb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1650px;
+  height: 800px;
+  background-color: #fef9f1;
+}
+
+.light-on {
+  height: 200px;
+  width: 200px;
+  background-color: #faea84;
+  border-radius: 100%;
+  box-shadow: 0 0 0 4px #f9efa6b5;
+}
+
+.dark-light-bulb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1650px;
+  height: 800px;
+  background-color: #111;
+}
+
+.light-off {
+  height: 200px;
+  width: 200px;
+  background-color: #252525;
+  border-radius: 100%;
+}
