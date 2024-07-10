@@ -1,4 +1,4 @@
-/* global todos, writeTodos */
+/* global todos */
 import { v4 as uuidv4 } from 'uuid';
 
 interface FormElements extends HTMLFormControlsCollection {
@@ -8,7 +8,6 @@ interface FormElements extends HTMLFormControlsCollection {
 const $todoForm = document.querySelector('#todo-form') as HTMLFormElement;
 
 $todoForm.addEventListener('submit', (event: Event) => {
-  writeTodos();
   event.preventDefault();
   const $formElements = $todoForm.elements as FormElements;
   const todo = {
@@ -19,12 +18,12 @@ $todoForm.addEventListener('submit', (event: Event) => {
   todos.push(todo);
   $todoList.appendChild(renderTodo(todo));
   $todoForm.reset();
+  writeTodos();
 });
 
 const $todoList = document.querySelector('#todo-list') as HTMLUListElement;
 
 $todoList.addEventListener('change', (event: Event) => {
-  writeTodos();
   const $eventTarget = event.target as HTMLInputElement;
   const todoId = $eventTarget.getAttribute('id');
   for (let i = 0; i < todos.length; i++) {
@@ -33,6 +32,7 @@ $todoList.addEventListener('change', (event: Event) => {
       break;
     }
   }
+  writeTodos();
 });
 
 for (let i = 0; i < todos.length; i++) {

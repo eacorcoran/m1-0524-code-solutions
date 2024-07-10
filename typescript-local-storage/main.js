@@ -1,8 +1,7 @@
-/* global todos, writeTodos */
+/* global todos */
 import { v4 as uuidv4 } from 'uuid';
 const $todoForm = document.querySelector('#todo-form');
 $todoForm.addEventListener('submit', (event) => {
-    writeTodos();
     event.preventDefault();
     const $formElements = $todoForm.elements;
     const todo = {
@@ -13,10 +12,10 @@ $todoForm.addEventListener('submit', (event) => {
     todos.push(todo);
     $todoList.appendChild(renderTodo(todo));
     $todoForm.reset();
+    writeTodos();
 });
 const $todoList = document.querySelector('#todo-list');
 $todoList.addEventListener('change', (event) => {
-    writeTodos();
     const $eventTarget = event.target;
     const todoId = $eventTarget.getAttribute('id');
     for (let i = 0; i < todos.length; i++) {
@@ -25,6 +24,7 @@ $todoList.addEventListener('change', (event) => {
             break;
         }
     }
+    writeTodos();
 });
 for (let i = 0; i < todos.length; i++) {
     const $todo = renderTodo(todos[i]);
