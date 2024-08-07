@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TypeScript Carousel</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-container">
+      <div class="carousel">
+        <div class="image-container">
+          <div class="left-arrow">
+            <a href="#" class="fa-solid fa-angle-left fa-2xl"></a>
+          </div>
+          <div class="image-active" data-view="1">
+            <img src="images/001.png" />
+          </div>
+          <div class="image" data-view="2">
+            <img src="images/004.png" />
+          </div>
+          <div class="image" data-view="3">
+            <img src="images/007.png" />
+          </div>
+          <div class="image" data-view="4">
+            <img src="images/025.png" />
+          </div>
+          <div class="image" data-view="5">
+            <img src="images/039.png" />
+          </div>
+          <div class="right-arrow">
+            <a href="#" class="fa-solid fa-angle-right fa-2xl"></a>
+          </div>
+        </div>
+        <div class="circle-container">
+          <div class="circle" data-view="1">
+            <a href="#" class="fa-solid fa-circle" data-view="1"></a>
+          </div>
+          <div class="circle" data-view="2">
+            <a href="#" class="fa-regular fa-circle" data-view="2"></a>
+          </div>
+          <div class="circle" data-view="3">
+            <a href="#" class="fa-regular fa-circle" data-view="3"></a>
+          </div>
+          <div class="circle" data-view="4">
+            <a href="#" class="fa-regular fa-circle" data-view="4"></a>
+          </div>
+          <div class="circle" data-view="5">
+            <a href="#" class="fa-regular fa-circle" data-view="5"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
