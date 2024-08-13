@@ -6,31 +6,37 @@ Answer the following questions in the provided markdown file before turning in t
 
 - What is a CLI?
 
+A command-line interface (CLI) is a means of interacting with a computer program by inputting lines of text called command-lines.
+
 - What is a GUI?
+
+A graphical user interface, or GUI , is a form of user interface that allows users to interact with electronic devices through graphical icons and visual indicators such as secondary notation. In many applications, GUIs are used instead of text-based UIs, which are based on typed command labels or text navigation. GUIs were introduced in reaction to the perceived steep learning curve of command-line interfaces (CLIs), which require commands to be typed on a computer keyboard.
 
 - Give at least one use case for each of the commands listed in this exercise.
 
-  - `man`
+  - `man`: To look up a command in the manual to get more information.
 
-  - `cat`
+  - `cat`: To print the contents of files in the terminal.
 
-  - `ls`
+  - `ls`: To show the contents of the current directory.
 
-  - `pwd`
+  - `pwd`: To print the current working directory.
 
-  - `echo`
+  - `echo`: To print a string to the terminal.
 
-  - `touch`
+  - `touch`: To create a new file.
 
-  - `mkdir`
+  - `mkdir`: To create a new directory.
 
-  - `mv`
+  - `mv`: To rename a directory.
 
-  - `rm`
+  - `rm`: To delete a directory.
 
-  - `cp`
+  - `cp`: To copy a directory.
 
 - What are the three virtues of a great programmer?
+
+Laziness, impatience and hubris
 
 ## Notes
 
